@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "Deck created with mdx-deck",
   "scripts": {
-    "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx",
-    "pdf": "mdx-deck pdf deck.mdx",
-    "image": "mdx-deck screenshot deck.mdx",
-    "help": "mdx-deck"
+    "start:ff": "mdx-deck fruits-and-fish.js --port 8088",
+    "start:bb": "mdx-deck buildings-and-bridges.js --port 8088",
+    "build:ff": "mdx-deck build fruits-and-fish.js",
+    "build:bb": "mdx-deck build buildings-and-bridges.js"
   },
   "keywords": [],
   "author": "Jacob Mischka <jacob@mischka.me>",
@@ -15,5 +14,5 @@
   "devDependencies": {
     "mdx-deck": "^1.6.7"
   },
-  "name": "fruits-and-fish"
+  "name": "augmented-learning-study-presentations"
 }
