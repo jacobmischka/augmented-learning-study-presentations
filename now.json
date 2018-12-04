@@ -1,0 +1,13 @@
+{
+	"version": 2,
+	"name": "augmented-learning-study-presentations",
+	"alias": "augmented-learning-study-presentations.mischka.software",
+	"builds": [
+		{ "src": "dist/*/*", "use": "@now/static" },
+		{ "src": "assets/**", "use": "@now/static" },
+		{ "src": "index.html", "use": "@now/static" }
+	],
+	"routes": [
+		{ "src": "/(?!assets)(.+)", "dest": "/dist/$1" }
+	]
+}

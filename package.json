@@ -5,8 +5,9 @@
   "scripts": {
     "start:ff": "mdx-deck fruits-and-fish.js --port 8088",
     "start:bb": "mdx-deck buildings-and-bridges.js --port 8088",
-    "build:ff": "mdx-deck build fruits-and-fish.js",
-    "build:bb": "mdx-deck build buildings-and-bridges.js"
+    "build": "yarn build:ff && yarn build:bb",
+    "build:ff": "mdx-deck build fruits-and-fish.js -d dist/fruits-and-fish",
+    "build:bb": "mdx-deck build buildings-and-bridges.js -d dist/buildings-and-bridges"
   },
   "keywords": [],
   "author": "Jacob Mischka <jacob@mischka.me>",

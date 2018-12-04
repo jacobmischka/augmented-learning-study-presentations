@@ -9,8 +9,11 @@ export default {
 	// https://github.com/jxnblk/mdx-deck/blob/master/docs/theming.md
 	// https://github.com/jxnblk/mdx-deck/blob/master/docs/themes.md
 	css: {
-		'& img.qrcode': {
-			width: '400px'
+		'& img': {
+			maxWidth: '100vw',
+			maxHeight: '60vh',
+			display: 'block',
+			margin: '0 auto'
 		}
 	}
 }
